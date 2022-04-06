@@ -6,7 +6,7 @@ const ingredients = [
   'Herbs',
   'Condiments',
 ];
-const emptyListEl = document.querySelector('ul');
+const listEl = document.querySelector('ul');
 
 const createItemEl = ingredients.map(ingredient => {
   const itemEl = document.createElement('li');
@@ -15,6 +15,6 @@ const createItemEl = ingredients.map(ingredient => {
   return itemEl
 });
 
-const fullListEl = emptyListEl.prepend(...createItemEl);
+const fullListEl = listEl.prepend(...createItemEl);
 
-console.log(emptyListEl);
+console.log(listEl);
