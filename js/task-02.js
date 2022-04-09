@@ -16,5 +16,3 @@ const createItemEl = ingredients.map(ingredient => {
 });
 
 const fullListEl = listEl.prepend(...createItemEl);
-
-console.log(listEl);

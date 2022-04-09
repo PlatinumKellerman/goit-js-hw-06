@@ -12,6 +12,3 @@ const findCategoriesEl = () => {
     };
 };
 
-countCategoriesEl();    
-findCategoriesEl();
-
