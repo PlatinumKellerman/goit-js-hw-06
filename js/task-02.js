@@ -4,7 +4,7 @@ const ingredients = [
   'Garlic',
   'Tomatos',
   'Herbs',
-  'Condiments',
+  'Condiments'
 ];
 const listEl = document.querySelector('#ingredients');
 
@@ -16,3 +16,4 @@ const createItemEl = ingredients.map(ingredient => {
 });
 
 const fullListEl = listEl.prepend(...createItemEl);
+

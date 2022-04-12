@@ -25,14 +25,11 @@ function createBoxes() {
 
  destroyedButtonEl.addEventListener('click', destroyBoxes);
 function destroyBoxes() {
-  if (addDivs.length > 0) {
-      for (const div of addDivs) {
-        div.remove();
-        continue;
-        console.log(addDivs);
-    }
+  let numberOfElementsToDelete = Number(inputNumberEl.value);
+  numberOfElementsToDelete = numberOfElementsToDelete > addDivs.length ? addDivs.length : numberOfElementsToDelete;
+  for (let i = 0; i < numberOfElementsToDelete; i++) {
+    addDivs[0].remove();
   }
-    
 }
 
 function getRandomHexColor() {

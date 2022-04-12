@@ -6,9 +6,9 @@ const countCategoriesEl = () => {
 };
 
 const findCategoriesEl = () => {
-    for (const category of categoriesArray) {
-        console.log(`Category: ${category.querySelector('h2').textContent}`);
-        console.log(`Elements: ${category.querySelectorAll('li').length}`);
-    };
+  categoriesArray.map(category => {
+    console.log(`Category: ${category.querySelector('h2').textContent}`);
+    console.log(`Elements: ${category.querySelectorAll('li').length}`);
+  })
 };
 
